@@ -96,6 +96,8 @@ class CharStack {
 
     char peek();
 
+    void printStack();
+
  private:
 
     //TODO: What data structure?

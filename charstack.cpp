@@ -1,6 +1,11 @@
 #include<iostream>
 #include<vector>
+#include<iomanip>    /* for setw */
 #include "charstack.h"
+using std::cout;
+using std::endl;
+using std::vector;
+using std::setw;
 
 
 
@@ -49,4 +54,15 @@ char CharStack::pop()
 char CharStack::peek()
 {
     return this->stack->at(this->size() - 1);
+}
+
+
+void CharStack::printStack(){
+    int numSpaces = 4;
+    cout << "The stack is now: (top of the stack at the bottom)" << endl;
+    for(auto item : *this->stack){
+        cout << setw(numSpaces) << " " << "---> " << item << endl;
+        numSpaces += 4;
+    }
+    cout << endl;
 }
