@@ -99,7 +99,7 @@ class CharStack {
  private:
 
     //TODO: What data structure?
-    vector<char> = new vector<char>();
+    vector<char> *stack = new vector<char>;
 };
 
 #endif
