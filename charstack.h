@@ -8,6 +8,10 @@
 #ifndef _charstack_h
 #define _charstack_h
 
+#include<vector>
+
+using std::vector;
+
 /*
  * Class: CharStack
  * ----------------
@@ -95,6 +99,7 @@ class CharStack {
  private:
 
     //TODO: What data structure?
+    vector<char> = new vector<char>();
 };
 
 #endif
